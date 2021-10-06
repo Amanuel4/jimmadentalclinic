@@ -1,0 +1,27 @@
+{% load static %}
+{%include 'main/includes/header.html'%}
+
+
+   
+     
+      <div class="container" data-aos="fade-up">
+      
+                  <h3>Register here</h3>
+                  <form method="POST" >
+                  {% csrf_token %}
+                        
+                        {{form.as_p}}<br/>
+                       
+                      <input type="submit" value="Login">
+                       
+                      </form>
+                       If you don't have already an account, <a href ="register.html"><strong>Register</strong></a> instead.
+                  
+    </div>
+    
+
+{% include 'main/includes/footer.html'%}
+    
+
+    
+ 

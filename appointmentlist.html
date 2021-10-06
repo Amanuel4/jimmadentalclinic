@@ -1,0 +1,19 @@
+{% load static %}
+{%include 'main/includes/header.html'%}
+
+  <div class="container">
+    
+    <h2><u>All Booked Appointments</u></h2>
+    {% for apps in app %}
+	    <p>{{apps.name}}</p>
+	    <p>{{apps.email}}</p>
+	    <p>{{apps.tel}}</p>
+	    <p>{{apps.date}}</p>
+	    <p>{{apps.dept}}</p>
+	    <p>{{apps.dentist}}</p>
+	    <p>{{apps.message}}</p>
+	   --------------------------------------------------------------------- ---------------------------------------------------------------------
+    {% endfor %}
+  </div>
+
+{% include 'main/includes/footer.html'%}
